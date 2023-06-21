@@ -1,73 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Outfit', sans-serif;
 }
 
-:root {
-    --white: hsl(0, 0%, 100%);
-    --light-gray: hsl(212, 45%, 89%);
-    --grayish-blue: hsl(220, 15%, 55%);
-    --dark-blue: hsl(218, 44%, 22%);
-}
-
-img {
-    max-width: 100%;
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
 }
 
 body {
-    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Light-gray);
     display: flex;
+    margin: 1rem;
     width: 100vw;
     height: 100vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--light-gray);
+}
+
+img {
+    border-radius: 10px;
+}
+
+.attribution {
+    margin-top: 0.5rem;
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.card h1 {
+    color: var(--Dark-blue);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-size: 22px;
+}
+
+.card p {
+    color: var(--Grayish-blue);
+    text-align: center;
+    font-size: 15px;
 }
 
 .card {
     position: relative;
     display: flex;
-    margin: 0, 1rem;
     flex-direction: column;
     width: 280px;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 17px;
+    background-color: var(--White);
+    border-radius: 15px;
     padding: 15px;
     justify-content: space-between;
-}
-
-.card img {
-    border-radius: 10px;
-    margin-bottom: 0.5rem;
-}
-
-.card h1 {
-    color: var(--dark-blue);
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.card p {
-    color: var(--grayish-blue);
-    text-align: center;
-}
-
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-    margin-top: 1.5rem;
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
-
-@media(min-width:500px){
-    .container{
-        width:400px;
-    }
 }
